@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPC Response Checker</title>
+    <link rel="stylesheet" href="bo.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚡ RPC Response Time Checker</h1>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <label for="rpcUrls">RPC URLs (one per line)</label>
+                <textarea id="rpcUrls" rows="5" placeholder="Enter RPC URLs here...">https://eth.llamarpc.com
+https://rpc.ankr.com/eth
+https://ethereum.publicnode.com</textarea>
+            </div>
+
+            <button id="checkButton" onclick="checkRPCs()">
+                <span class="button-content">Check Response Times</span>
+                <div class="spinner hidden"></div>
+            </button>
+
+            <div id="results" class="results-container"></div>
+        </main>
+
+        <center>
+            <a href="index1.html">Check Single RPC Url</a>
+        </center>
+
+    </div>
+
+    <script src="../ethers.js" type="application/javascript"></script>
+    <script src="bo.js"></script>
+</body>
+</html>

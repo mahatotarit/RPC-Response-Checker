@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPC URL Response Time Checker</title>
+  <link rel="stylesheet" href="jp.css">
+  <script defer src="jp.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>RPC URL Response Time Checker</h1>
+    <input type="text" id="rpcUrlInput" value="https://eth.llamarpc.com" placeholder="Enter RPC URL" />
+    <button id="checkButton">Check Response Time</button>
+    <div id="results">
+      <h2>Results:</h2>
+      <ul id="resultsList"></ul>
+    </div>
+  </div>
+
+  <div class="container">
+      <a href="index1.html">Check Multiple RPC Url</a>
+  </div>
+
+</body>
+</html>
+<script src="../ethers.js" type="application/javascript"></script>
